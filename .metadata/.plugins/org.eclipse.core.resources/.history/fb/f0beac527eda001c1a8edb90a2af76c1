@@ -1,0 +1,14 @@
+package com.udemy.tdd.isbntools;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StockManagementTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

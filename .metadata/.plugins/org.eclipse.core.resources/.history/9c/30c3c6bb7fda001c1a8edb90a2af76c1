@@ -1,0 +1,16 @@
+package com.udemy.tdd.isbntools;
+
+public class StockManager {
+	private ExternalISBNDataInterface service;
+
+
+	public void setService(ExternalISBNDataInterface service) {
+		this.service = service;
+	}
+
+	public String getLocatorCode(String ISBN) {
+		Book book = service.lookup(ISBN);
+		return null;
+	}
+
+}

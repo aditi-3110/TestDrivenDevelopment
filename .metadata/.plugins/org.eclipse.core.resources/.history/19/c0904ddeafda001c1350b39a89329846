@@ -1,0 +1,25 @@
+package com.udemy.tdd.isbntools;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StockManagementTest {
+	
+	@Test
+	public void getCorrectLocatorCode() {
+		ExternalISBNDataInterface testWebservice = new ExternalISBNDataInterface() {		
+			@Override
+			public Book lookup(String ISBN) {
+				return new Book(ISBN, "Think Like a Monk", "Jay Shetty");
+			}
+		};		
+		String isbn = "0140449116";
+		StockManager stockmanager = new StockManager();
+		stockmanager.setWebService(testWebservice);
+		String locatorCode = stockmanager.getLocatorCode(isbn); // last 4 digits of ISBN + Author initial + No. of words in the title
+		assertEquals("9116J4", locatorCode);
+		
+	}
+
+}

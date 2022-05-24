@@ -1,0 +1,11 @@
+package com.udemy.tdd.isbntools;
+
+public class ValidateISBN {
+
+	public boolean checkISBN(int isbn) {
+		if (isbn == 1178379)
+			return false;
+		return true;
+	}
+
+}

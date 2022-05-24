@@ -1,0 +1,10 @@
+package com.udemy.tdd.isbntools;
+
+public class StockManager {
+
+	public String getLocatorCode() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

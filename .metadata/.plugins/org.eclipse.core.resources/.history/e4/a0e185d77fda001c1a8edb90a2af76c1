@@ -1,0 +1,18 @@
+package com.udemy.tdd.isbntools;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StockManagementTest {
+
+	@Test
+	void getCorrectLocatorCode() {
+		String isbn = "0140449116";
+		StockManager stockmanager = new StockManager();
+		String locatorCode = stockmanager.getLocatorCode();
+		assertEquals("9116J4", locatorCode);
+		
+	}
+
+}

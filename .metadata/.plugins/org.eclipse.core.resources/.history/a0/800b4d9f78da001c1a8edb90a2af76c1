@@ -1,0 +1,36 @@
+package com.udemy.tdd.isbntools;
+
+public class ValidateISBN {
+
+	public boolean checkISBN(String isbn) {
+		
+
+		if (isbn.length() == 10 || isbn.length() == 13) {
+		
+			int total = 0;
+			for (int i=0;i<isbn.length();i++) {
+				if (!Character.isDigit(isbn.charAt(i)))
+					{
+					if (i == isbn.length()-1 && isbn.charAt(i) == 'X') {
+						total += 10;
+					}
+					else {
+						throw new NumberFormatException("ISBN is digit only");
+					}
+					}
+				
+				total += Character.getNumericValue(isbn.charAt(i)) * (isbn.length() - i) ;
+			}
+			if (total % 11 == 0) {
+				return true;}
+			else {
+				return false;
+				}
+		}
+		else {
+			throw new NumberFormatException("ISBN must be 10 digits");
+		}
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.udemy.tdd.isbntools;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ValidateISBNtest {
+
+	@Test
+	void checkValidISBN() {
+		//fail("Not yet implemented");
+		ValidateISBN validate = new ValidateISBN();
+		boolean result = validate.checkISBN("01178379");
+		assertTrue(result);
+	}
+	
+	@Test
+	void checkInValidISBN() {
+		//fail("Not yet implemented");
+		ValidateISBN validate = new ValidateISBN();
+		boolean result = validate.checkISBN("01178379");
+		assertFalse(result);
+	}
+}
+

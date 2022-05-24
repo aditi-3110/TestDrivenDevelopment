@@ -1,0 +1,70 @@
+2022-05-23 12:19:33,106 ERROR [ForkJoinPool.commonPool-worker-7] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-23 12:20:12,020 ERROR [Worker-30: Building] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-23 12:20:22,730 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - java.lang.IllegalArgumentException
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.asm.ClassReader.<init>(ClassReader.java:170)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.asm.ClassReader.<init>(ClassReader.java:153)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.opt.ByteCodeRepository.$anonfun$parseClass$1(ByteCodeRepository.scala:274)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.opt.ByteCodeRepository.parseClass(ByteCodeRepository.scala:272)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.opt.ByteCodeRepository.parsedClassNode(ByteCodeRepository.scala:83)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.opt.ByteCodeRepository.classNode(ByteCodeRepository.scala:108)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.BTypesFromSymbols.buildInlineInfo(BTypesFromSymbols.scala:548)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.BTypesFromSymbols.setClassInfo(BTypesFromSymbols.scala:458)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.BTypesFromSymbols.classBTypeFromSymbol(BTypesFromSymbols.scala:134)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.BTypesFromSymbols.setClassInfo(BTypesFromSymbols.scala:353)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.BTypesFromSymbols.classBTypeFromSymbol(BTypesFromSymbols.scala:134)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.BCodeSkelBuilder$PlainSkelBuilder.genPlainClass(BCodeSkelBuilder.scala:94)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase$Worker1.visit(GenBCode.scala:190)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase$Worker1.$anonfun$run$1(GenBCode.scala:139)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase$Worker1.run(GenBCode.scala:139)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.buildAndSendToDisk(GenBCode.scala:381)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.backend.jvm.GenBCode$BCodePhase.run(GenBCode.scala:350)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.Global$Run.compileUnitsInternal(Global.scala:1431)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.Global$Run.compileUnits(Global.scala:1416)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.Global$Run.compileSources(Global.scala:1412)
+2022-05-23 14:17:48,041 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.interpreter.IMain._initialize(IMain.scala:127)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.tools.nsc.interpreter.IMain.initializeSynchronous(IMain.scala:147)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl$DefaultBuilder$$anon$1.<init>(EclipseRepl.scala:151)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl$DefaultBuilder$.interpreter(EclipseRepl.scala:148)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl.boot(EclipseRepl.scala:193)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl.$anonfun$init$1(EclipseRepl.scala:175)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl.$anonfun$init$1$adapted(EclipseRepl.scala:175)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl.$anonfun$safely$3(EclipseRepl.scala:252)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.Console$.withErr(Console.scala:192)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl.$anonfun$safely$2(EclipseRepl.scala:251)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.Console$.withOut(Console.scala:163)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at org.scalaide.core.internal.repl.EclipseRepl.$anonfun$safely$1(EclipseRepl.scala:250)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+2022-05-23 14:17:48,042 ERROR [scala-execution-context-global-880] - System.err - at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.util.Success.$anonfun$map$1(Try.scala:251)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.util.Success.map(Try.scala:209)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+2022-05-23 14:17:48,043 ERROR [scala-execution-context-global-880] - System.err - at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2022-05-23 21:11:39,296 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-23 21:11:40,602 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-23 21:11:41,500 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-24 15:30:28,778 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-24 15:30:30,211 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-24 15:30:31,350 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-05-24 16:34:15,342 ERROR [main] - System.err - Warning: NLS missing message: MavenImpl_error_lookup in: org.eclipse.m2e.editor.internal.messages

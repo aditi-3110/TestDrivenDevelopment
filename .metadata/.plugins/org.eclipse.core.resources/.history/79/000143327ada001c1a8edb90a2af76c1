@@ -1,0 +1,58 @@
+package com.udemy.tdd.isbntools;
+
+public class ValidateISBN {
+
+	private static final int LONG_ISBN_LENGTH = 13;
+
+	public boolean checkISBN(String isbn) {
+
+		// For 10 digit ISBN
+		if (isbn.length() == 10) {
+			return isThisavalid10DigitISBN(isbn);
+		}
+		// For 13 digit ISBN
+		else if (isbn.length() == LONG_ISBN_LENGTH) {
+			return isThisaValid13DigitISBN(isbn);
+		} else {
+			throw new NumberFormatException("ISBN must be 10 digits");
+		}
+
+	}
+
+	private boolean isThisaValid13DigitISBN(String isbn) {
+		int total = 0;
+		int evenTotal = 0, oddTotal = 0;
+		for (int i = 0; i < 13; i++) {
+			if (i % 2 == 0) {
+				evenTotal += Character.getNumericValue(isbn.charAt(i));
+			} else
+				oddTotal += Character.getNumericValue(isbn.charAt(i));
+			total = evenTotal + oddTotal;
+		}
+		if (total % 10 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	private boolean isThisavalid10DigitISBN(String isbn) {
+		int total = 0;
+		for (int i = 0; i < 10; i++) {
+			if (!Character.isDigit(isbn.charAt(i))) {
+				if (i == 9 && isbn.charAt(i) == 'X') {
+					total += 10;
+				} else {
+					throw new NumberFormatException("ISBN is digit only");
+				}
+			}	
+			total += Character.getNumericValue(isbn.charAt(i)) * (10 - i);
+		}
+		if (total % 11 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+}
